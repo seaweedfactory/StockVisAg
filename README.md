@@ -62,3 +62,9 @@ Click Parse Stock Files and a prompt will appear for a folder containing the dat
 The data will be passed through a normalizaing function.
 
 A prompt will appear to save the output. Both a CSV containing the normalized data and a PNG image file will be created with the given name. The WriteToImage function determines what data point in the TickerPoint will be used for the image. It also does additional normalization to produce the image.
+
+# Results
+
+This software was used for a project in conjunction with a printmaker. See it here.
+
+http://seaweedfactory.blogspot.com/p/stock.html
