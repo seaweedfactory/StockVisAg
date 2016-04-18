@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>StockVisAg.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,28 +49,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GetStockListForm.cs">
+    <Compile Include="Data\Company\CompanyStockGroup.cs" />
+    <Compile Include="Data\Company\IStockPoint.cs" />
+    <Compile Include="Data\Company\StockPoint.cs" />
+    <Compile Include="Data\Company\StockPointCollection.cs" />
+    <Compile Include="Data\StockFile\FormatHandler\YahooFinance\YahooFinanceFormatHandler.cs" />
+    <Compile Include="Data\StockFile\IStockFile.cs" />
+    <Compile Include="Data\StockFile\StockFileFactory.cs" />
+    <Compile Include="Data\StockFile\StockFileFormat.cs" />
+    <Compile Include="Data\StockFile\IStockFileFormatHandler.cs" />
+    <Compile Include="Data\Symbol\ITickerSymbol.cs" />
+    <Compile Include="Data\Symbol\TickerSymbolFactory.cs" />
+    <Compile Include="ExportAllDataAsImage.cs" />
+    <Compile Include="StockVisualizer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GetStockListForm.Designer.cs">
-      <DependentUpon>GetStockListForm.cs</DependentUpon>
+    <Compile Include="StockVisualizer.Designer.cs">
+      <DependentUpon>StockVisualizer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TickerInfo.cs" />
-    <Compile Include="TickerPoint.cs" />
-    <EmbeddedResource Include="GetStockListForm.resx">
-      <DependentUpon>GetStockListForm.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\StockFile\StockFile.cs" />
+    <Compile Include="Data\Symbol\TickerSymbol.cs" />
+    <Compile Include="Visualize\StockSquareVisualizer.cs" />
+    <EmbeddedResource Include="StockVisualizer.resx">
+      <DependentUpon>StockVisualizer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,7 +96,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="stock_symbols.txt" />
+    <None Include="Resources\DefaultStockTickerSymbols.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -15,7 +15,7 @@ namespace StockVisAg
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GetStockListForm());
+            Application.Run(new StockVisualizer());
         }
     }
 }
