@@ -1,8 +1,0 @@
-C:\Users\User\Source\Repos\StockVisAg\StockVisAg\bin\Debug\StockVisAg.exe
-C:\Users\User\Source\Repos\StockVisAg\StockVisAg\bin\Debug\StockVisAg.pdb
-C:\Users\User\Source\Repos\StockVisAg\StockVisAg\obj\x86\Debug\StockVisAg.csprojResolveAssemblyReference.cache
-C:\Users\User\Source\Repos\StockVisAg\StockVisAg\obj\x86\Debug\StockVisAg.Properties.Resources.resources
-C:\Users\User\Source\Repos\StockVisAg\StockVisAg\obj\x86\Debug\StockVisAg.csproj.GenerateResource.Cache
-C:\Users\User\Source\Repos\StockVisAg\StockVisAg\obj\x86\Debug\StockVisAg.exe
-C:\Users\User\Source\Repos\StockVisAg\StockVisAg\obj\x86\Debug\StockVisAg.pdb
-C:\Users\User\Source\Repos\StockVisAg\StockVisAg\obj\x86\Debug\StockVisAg.StockVisualizer.resources
